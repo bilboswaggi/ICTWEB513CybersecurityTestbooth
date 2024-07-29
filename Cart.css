@@ -1,0 +1,147 @@
+/* CSS for the Computer Force website */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header section */
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f8f8f8;
+}
+
+#logo {
+    max-width: 200px;
+}
+
+/* Menu section */
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.menu-items button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-items button:hover {
+    background-color: #555;
+}
+
+.search-area {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.search-area button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color: orange;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-area button:hover {
+    background-color: darkorange;
+}
+
+/* Main and Aside sections */
+.main-container {
+    display: flex;
+    margin: 20px;
+}
+
+.main {
+    flex: 4;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+
+.aside h2 {
+    text-align: center;
+}
+
+.aside table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.aside button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: orange;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.aside button:hover {
+    background-color: darkorange;
+}
+
+/* Footer section */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+    }
+    
+    .main-container {
+        flex-direction: column;
+    }
+
+    .search-area {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Force</title>
+    <link rel="stylesheet" href="Cart.css">
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <img id="logo" src="Computer%20Force%20Logo.png" alt="Computer Force Logo">
+    </div>
+
+    <div class="menu-container">
+        <div class="menu-items">
+            <button onclick="navigateTo('index.html')">Home</button>
+            <button onclick="navigateTo('products.html')">Products</button>
+            <button onclick="navigateTo('register.html')">Register</button>
+            <button onclick="navigateTo('Cart.html')">Cart</button>
+            <button onclick="navigateTo('About.html')">About</button>
+        </div>
+        <div class="search-area">
+            <input type="text" class="search-box" placeholder="Enter search term">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="main">
+            <h1>About Computer Force</h1>
+            <p>Computer Force is a brand-new start-up company designed to provide first-class service to its customers. Based in Parramatta in Sydney, Computer Force provides top class computing products at bargain prices, for sale throughout Australia.</p>
+            <h2>Our goals are:</h2>
+            <ul>
+                <li>To become Australia’s most well-known and respected hardware and software provider</li>
+                <li>To create a service-based organisation whose goal is to exceed customer's expectations</li>
+                <li>To provide a smooth, efficient, and transparent sales process</li>
+            </ul>
+            <p>You can contact us using the following methods:</p>
+            <p>Address: 100 Main Road, Parramatta, NSW 20150</p>
+            <p>Email: info@computerforce.com.au</p>
+            <p>Phone: 02 4444 5555</p>
+        </div>
+
+        <div class="aside">
+            <h2>Purchases</h2>
+            <div>
+                <p>0 items</p>
+                <p>Cart sub-total: $0</p>
+            </div>
+            <button onclick="navigateTo('cart.html')">Go to Checkout</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&#169; 2024 Nicholas Booth</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Force</title>
+    <link rel="stylesheet" href="Cart.css">
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <img id="logo" src="Computer%20Force%20Logo.png" alt="Computer Force Logo">
+    </div>
+
+    <div class="menu-container">
+        <div class="menu-items">
+            <button onclick="navigateTo('index.html')">Home</button>
+            <button onclick="navigateTo('products.html')">Products</button>
+            <button onclick="navigateTo('Register.html')">Register</button>
+            <button onclick="navigateTo('Cart.html')">Cart</button>
+            <button onclick="navigateTo('About.html')">About</button>
+        </div>
+        <div class="search-area">
+            <label for="search" class="visually-hidden">Search</label>
+            <input type="text" id="search" class="search-box" placeholder="Enter search term" aria-label="Search">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="main">
+            <div class="main-content">
+                <h1>Welcome to Computer Force</h1>
+                <p>Computer Force is your online expert in all things computing</p>
+                <h2>Product Categories</h2>
+            </div>
+            
+            <div class="product-category">
+                <a href="products.html#computer">
+                    <img src="Computer.jpg" alt="Computers">
+                    <h2>Computers</h2>
+                </a>
+            </div>
+            <div class="product-category">
+                <a href="products.html#samsung">
+                    <img src="Laptop.jpg" alt="Laptops">
+                    <h2>Laptops</h2>
+                </a>
+            </div>
+            <div class="product-category">
+                <a href="products.html#google">
+                    <img src="Monitor.jpg" alt="Moniters">
+                    <h2>Moniters</h2>
+                </a>
+            </div>
+            <div class="product-category">
+                <a href="products.html#android">
+                    <img src="Printer.jpg" alt="Printing and Scanning">
+                    <h2>Printing and Scanning</h2>
+                </a>
+            </div>
+            <div class="product-category">
+                <a href="products.html#android">
+                    <img src="software.jpg" alt="Software">
+                    <h2>Software</h2>
+                </a>
+            </div>
+            <div class="product-category">
+                <a href="products.html#android">
+                    <img src="tablet.jpg" alt="Tablets">
+                    <h2>Tablets</h2>
+                </a>
+            </div>
+        </div>
+        <div class="aside">
+            <h2>Purchases</h2>
+            <div>
+                <p>0 items</p>
+                <p>Cart sub-total: $0</p>
+            </div>
+            <button onclick="navigateTo('cart.html')">Go to Checkout</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&#169; 2024 Nicholas Booth</p>
+    </div>
+
+</body>
+</html>

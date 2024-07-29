@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your purchases</title>
+    <link rel="stylesheet" href="Cart.css">
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <img id="logo" src="Computer%20Force%20Logo.png" alt="Computer Force Logo">
+    </div>
+
+    <div class="menu-container">
+        <div class="menu-items">
+            <button onclick="navigateTo('index.html')">Home</button>
+            <button onclick="navigateTo('products.html')">Products</button>
+            <button onclick="navigateTo('register.html')">Register</button>
+            <button onclick="navigateTo('cart.html')">Cart</button>
+            <button onclick="navigateTo('about.html')">About</button>
+        </div>
+        <div class="search-area">
+            <input type="text" class="search-box" placeholder="Enter search term">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="main">
+            <h1>Your purchases</h1>
+            <p>Please confirm your purchases, and then click the Checkout button to proceed with your purchase.</p>
+            <form action="submit.php" method="post">
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Cost</th>
+                    </tr>
+                    <tr>
+                        <td>Example Product 1</td>
+                        <td><input type="text" name="quantity" value="1"></td>
+                        <td><input type="text" name="cost" value="$10.00"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="summary">
+                        <td></td>
+                        <td>Sub-total</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr class="summary">
+                        <td></td>
+                        <td>GST</td>
+                        <td>$1.00</td>
+                    </tr>
+                    <tr class="summary">
+                        <td></td>
+                        <td>Total</td>
+                        <td>$11.00</td>
+                    </tr>
+                </table>
+                <button type="submit">Checkout</button>
+            </form>
+        </div>
+
+        <div class="aside">
+            <h2>Purchases</h2>
+            <div>
+                <p>0 items</p>
+                <p>Cart sub-total: $0</p>
+            </div>
+            <button onclick="navigateTo('cart.html')">Go to Checkout</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&#169; 2024 Nicholas Booth</p>
+    </div>
+
+</body>
+</html>
+

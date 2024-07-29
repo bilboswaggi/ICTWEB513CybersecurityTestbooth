@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer_Force_products</title>
+    <link rel="stylesheet" href="Cart.css">
+    
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+
+        function filterProducts() {
+            var input, filter, products, category, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            products = document.getElementsByClassName("product-category");
+
+            for (i = 0; i < products.length; i++) {
+                category = products[i];
+                txtValue = category.textContent || category.innerText;
+
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    category.style.display = "";
+                } else {
+                    category.style.display = "none";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <img id="logo" src="Computer%20Force%20Logo.png" alt="Computer Force Logo">
+    </div>
+
+    <div class="menu-container">
+        <div class="menu-items">
+            <button onclick="navigateTo('index.html')">Home</button>
+            <button onclick="navigateTo('products.html')">Products</button>
+            <button onclick="navigateTo('Register.html')">Register</button>
+            <button onclick="navigateTo('Cart.html')">Cart</button>
+            <button onclick="navigateTo('About.html')">About</button>
+        </div>
+        <div class="search-area">
+            <label for="searchInput">Search Term*</label>
+            <input type="text" id="searchInput" class="search-box" placeholder="Enter search term" onkeyup="filterProducts()">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="main">
+            <h1>Products we sell</h1>
+            <p>Computer Force sells products in the following categories:</p>
+            <h2>Product Categories</h2>
+            
+            <div class="product-category" id="apple">
+                <a href="products.html#apple">
+                    <img src="audio.jpg" alt="Audio">
+                    <h3>Audio</h3>
+                </a>
+                    <p>The innovative new design features back glass that has colour infused throughout the material. A custom-designed dual ion-exchange process for the glass, and an aerospace-grade aluminium enclosure, help make iPhone 15 incredibly durable.</p>
+                <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            
+            <div class="product-category" id="samsung">
+                <a href="products.html#samsung">
+                    <img src="Laptop.jpg" alt="laptops">
+                    <h3>Laptops</h3>
+                </a>
+                    <p>Industry-leading hardware meets AI Made with titanium. 200MP high-resolution photography & hyper-realistic gameplay</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            
+            <div class="product-category" id="google">
+                <a href="products.html#google">
+                    <img src="Printer.jpg" alt="Printers">
+                    <h3>Printing and Scanning</h3>
+                </a>
+                    <p>It’s custom-designed with AI for cutting-edge photo and also video features and smarter ways to help throughout the day.2 And it makes Huawei super fast and efficient.</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            
+            <div class="product-category" id="android2">
+                <a href="products.html#android">
+                    <img src="Computer.jpg" alt="Computers">
+                    <h3>Computers</h3>
+                </a>
+                    <p>Power up and power through. bigger, brighter screen. The triple-lens camera will let you take breathtaking shots, day or night. Plus, with 2× more security updates than the competition², 2 years of OS updates, and fingerprint and face unlock technology, you can rest assured your device is secure, inside and out.</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            
+            <div class="product-category" id="5g2">
+                <a href="products.html#5g">
+                    <img src="Monitor.jpg" alt="Monitors">
+                    <h3>Moniters</h3>
+                </a>
+                    <p>Unlock your phone instantly by touching the on-screen fingerprint reader beneath the display.
+Power up in just 10 minutes with 68W TurboPowerTM charging3 – or free yourself from cords with 15W wireless charging.</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            
+            <div class="product-category" id="accessories">
+                <a href="products.html#accessories">
+                    <img src="Img/pixel-5-google.gif" alt="Phone Accessories">
+                    <h3>Software</h3>
+                </a>
+                    <p>the most revolutionary Pixel yet.</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            
+            <div class="product-category" id="accessories2">
+                <a href="products.html#accessories">
+                    <img src="graphics%20card.png" alt="grapghics cards">
+                    <h3>Graphics cards</h3>
+                </a>
+                    <p>Samsung to Ipads, we stock it all</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            <div class="product-category" id="android">
+                <a href="products.html#android">
+                    <img src="software.jpg" alt="storage">
+                    <h3>Storage</h3>
+                </a>
+                    <p>Titanium alloy, carbon fiber, and more. Built to the hilt with aerospace materials – with no expense spared.</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            <div class="product-category" id="android">
+                <a href="products.html#android">
+                    <img src="Networking.jpg" alt="Networking">
+                    <h3>Networking</h3>
+                </a>
+                    <p>Titanium alloy, carbon fiber, and more. Built to the hilt with aerospace materials – with no expense spared.</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            <div class="product-category" id="android">
+                <a href="products.html#android">
+                    <img src="keyboard%20and%20mouse.jpg" alt="Keyboards and Mice">
+                    <h3>Keyboards and Mice</h3>
+                </a>
+                    <p>Titanium alloy, carbon fiber, and more. Built to the hilt with aerospace materials – with no expense spared.</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            <div class="product-category" id="android">
+                <a href="products.html#android">
+                    <img src="periphrals.jpeg" alt="Periphrals">
+                    <h3>Peripherals</h3>
+                </a>
+                    <p>Titanium alloy, carbon fiber, and more. Built to the hilt with aerospace materials – with no expense spared.</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            <div class="product-category" id="android">
+                <a href="products.html#android">
+                    <img src="tablet.jpg" alt="tablets">
+                    <h3>Tablets</h3>
+                </a>
+                    <p>Titanium alloy, carbon fiber, and more. Built to the hilt with aerospace materials – with no expense spared.</p>
+                    <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+            
+        </div>
+        <div class="aside">
+            <h2>Purchases</h2>
+            <div>
+                <p>0 items</p>
+                <p>Cart sub-total: $0</p>
+            </div>
+            <button onclick="navigateTo('cart.html')">Go to Checkout</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&#169; 2024 Nicholas Booth</p>
+    </div>
+
+</body>
+</html>
